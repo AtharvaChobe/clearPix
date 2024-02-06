@@ -36,7 +36,7 @@ const GetData = () => {
       method: 'POST',
       url: 'https://product-background-removal.p.rapidapi.com/cutout/commodity/commodity',
       headers: {
-        'X-RapidAPI-Key': '77fda6d5b5msha6dec97b1da1a89p11fa38jsnac6b2ee6fccf',
+        'X-RapidAPI-Key': '31fbc46ee9msh6a34913784143fap15a720jsnbb96d0876af0',
         'X-RapidAPI-Host': 'product-background-removal.p.rapidapi.com',
       },
       data: data,
