@@ -3,7 +3,7 @@ import React, { useRef, useState } from 'react';
 import axios from 'axios';
 import Image from 'next/image'
 import Lottie from 'react-lottie';
-import animation1 from '@/lotties/animation1';
+import animation1 from '../lotties/Animation1.json';
 import { FaDownload } from "react-icons/fa6";
 import { saveAs } from 'file-saver';
 
