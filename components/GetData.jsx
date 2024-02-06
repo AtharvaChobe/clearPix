@@ -56,7 +56,7 @@ const GetData = () => {
       console.error(error);
     }
 
-    
+
     ref.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
@@ -65,7 +65,7 @@ const GetData = () => {
   };
 
 
-  const downloadImage = () =>{
+  const downloadImage = () => {
     saveAs(result, 'image.png')
   }
 
@@ -84,6 +84,9 @@ const GetData = () => {
 
         <div className='flex items-center flex-col my-auto mx-4 gap-4'>
           <input type="file" name="" id="" className='p-12 bg-white border-2 rounded-lg border-dashed text-gray-900 border-gray-300 cursor-pointer dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 mx-3' onChange={handleChange} />
+          <p className='text-xs text-red-500'>Image format: JPEG JPG BMP WEBP PNG(8-bit, 16-bit, 64-bit PNG not supported) <br />
+            Image size: No more than 3 MB. <br />
+            Image resolution: Less than 2000x2000px.</p>
           <p className='text-slate-600'>Upload Progress: {Uploadprogress}%</p>
           <button className='font-bold bg-gold rounded-md shadow-md px-3 py-2 hover:shadow-lg' onClick={getData}>Submit</button>
         </div>

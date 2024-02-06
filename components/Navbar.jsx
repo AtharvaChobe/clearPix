@@ -8,7 +8,7 @@ const Navbar = async () => {
     const user = await currentUser();
     return (
         <div>
-            <nav className='flex w-full items-center border-b shadow-sm justify-around bg-black flex-wrap'>
+            <nav className='flex w-full items-center border-b shadow-sm justify-around bg-black flex-wrap py-3 md:py-0'>
                 <Link href={'/'}><h1 className='text-gold font-bold'>ClearPix</h1></Link>
 
                 <SignedIn>
