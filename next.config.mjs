@@ -1,4 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-export default nextConfig;
+const nextConfig = {
+    images: {
+      domains: ['ai-result-rapidapi.ailabtools.com'],
+    },
+  };
+  
+  export default nextConfig;
+  
