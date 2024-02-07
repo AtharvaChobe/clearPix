@@ -5,7 +5,7 @@ const Steps = () => {
     return (
         <div className='flex items-center justify-center h-full md:h-[90vh] flex-wrap md:flex-nowrap bg-gold px-6 w-10/12 rounded-xl'>
             <div className='w-full md:w-2/3'>
-                <h1 className='font-bold text-5xl'>How to remove Background?</h1>
+                <h1 className='font-bold text-4xl md:text-5xl'>How to remove Background?</h1>
                 <ul className='flex flex-col gap-4'>
                     <li className='flex flex-col'>
                         <div className='flex flex-row font-bold text-xl gap-2'>
@@ -33,7 +33,7 @@ const Steps = () => {
             </div>
 
             <div>
-                <Image className='overflow-hidden rounded-md shadow-lg' src={'/steps.jpg'} height={400} width={300} alt='clearPix-steps' />
+                <Image className='overflow-hidden rounded-md shadow-lg mb-4' src={'/steps.jpg'} height={400} width={300} alt='clearPix-steps' />
             </div>
         </div>
     )
