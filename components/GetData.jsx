@@ -1,5 +1,5 @@
 'use client'
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import axios from 'axios';
 import Image from 'next/image'
 import Lottie from 'react-lottie';
@@ -8,6 +8,7 @@ import { FaDownload } from "react-icons/fa6";
 import { saveAs } from 'file-saver';
 
 const GetData = () => {
+  
   // lotties file
 
   const defaultOptions = {
@@ -36,7 +37,7 @@ const GetData = () => {
       method: 'POST',
       url: 'https://product-background-removal.p.rapidapi.com/cutout/commodity/commodity',
       headers: {
-        'X-RapidAPI-Key': NEXT_RAPID_API,
+        'X-RapidAPI-Key': process.env.NEXT_RAPID_API,
         'X-RapidAPI-Host': 'product-background-removal.p.rapidapi.com',
       },
       data: data,
